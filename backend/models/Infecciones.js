@@ -1,10 +1,10 @@
 const { DataTypes } = require('sequelize');
 const { bd } = require('../config/db');
 
-const Infecciones = bd.define('Infecciones', {
-    departamento_id: {
-        type: DataTypes.INTEGER,
-    },
+const Infecciones = bd.define('Infeccionesa6', {
+     departamento: {
+        type: DataTypes.STRING,
+    }, 
     departamento_nombre: {
         type: DataTypes.STRING,
     },

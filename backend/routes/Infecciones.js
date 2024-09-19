@@ -23,11 +23,11 @@ router.post('/', upload.single('archivoCSV'), async (req, res) => {
                 try {
                     console.log(fila)
                     const {
-                        '"departamento_id"': departamento_id,
+                        departamento,
                         departamento_nombre,
                         provincia_id,
                         provincia_nombre,
-                        'año': año,
+                        año,
                         semanas_epidemiologicas,
                         evento_nombre,
                         grupo_edad_id,
@@ -35,7 +35,7 @@ router.post('/', upload.single('archivoCSV'), async (req, res) => {
                         cantidad_casos
                     } = fila;
                     await Infecciones.create({
-                        departamento_id,
+                        departamento,
                         departamento_nombre,
                         provincia_id,
                         provincia_nombre,
