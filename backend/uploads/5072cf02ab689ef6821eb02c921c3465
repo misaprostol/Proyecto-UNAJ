@@ -1,0 +1,2 @@
+﻿departamento_id,departamento_nombre,provincia_id,provincia_nombre,año,semanas_epidemiologicas,evento_nombre,grupo_edad_id,grupo_edad_desc,cantidad_casos
+760,SAN MIGUEL,6,Buenos Aires,2018,18,Bronquiolitis en menores de 2 años,2,6 a 11 m,2

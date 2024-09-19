@@ -1,0 +1,7 @@
+﻿departamento_id,departamento_nombre,provincia_id,provincia_nombre,año,semanas_epidemiologicas,evento_nombre,grupo_edad_id,grupo_edad_desc,cantidad_casos
+760,SAN MIGUEL,6,Buenos Aires,2018,18,Bronquiolitis en menores de 2 años,2,6 a 11 m,2
+760,SAN MIGUEL,6,Buenos Aires,2018,18,Bronquiolitis en menores de 2 años,3,12 a 23 m,3
+14,CAPITAL,14,Córdoba,2018,21,Enfermedad tipo influenza (ETI),4,2 a 4,1
+427,LA MATANZA,6,Buenos Aires,2018,19,Neumonía,5,5 a 9,2
+427,LA MATANZA,6,Buenos Aires,2018,19,Bronquiolitis en menores de 2 años,2,6 a 11 m,2
+427,LA MATANZA,6,Buenos Aires,2018,19,Bronquiolitis en menores de 2 años,3,12 a 23 m,1
