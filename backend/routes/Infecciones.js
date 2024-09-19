@@ -23,11 +23,11 @@ router.post('/', upload.single('archivoCSV'), async (req, res) => {
                 try {
                     console.log(fila)
                     const {
-                        departamento_id,
+                        '"departamento_id"': departamento_id,
                         departamento_nombre,
                         provincia_id,
                         provincia_nombre,
-                        año,
+                        'año': año,
                         semanas_epidemiologicas,
                         evento_nombre,
                         grupo_edad_id,
