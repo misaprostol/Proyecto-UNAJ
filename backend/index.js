@@ -18,7 +18,7 @@ bd.sync() // Elimina la tabla si existe y la vuelve a crear
     });
 
 // Rutas y middleware
-app.use('/infecciones', require('./routes/infecciones'));
+app.use('/infecciones', require('./routes/Infecciones'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
