@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,19 @@
     <title>IRAmap - Argentina</title>
 </head>
 <body> 
-    <div class="container">
-        <div class="row my-4">
-            <div class="col-12">
-                <h1 class="text-center">Mapa de Argentina</h1>
-                <div class="input-group">
-                    <input type="text" id="search" class="form-control" placeholder="Buscar provincia o localidad">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" id="searchButton" type="button">Buscar</button>
-                    </div>
-                </div>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">IRA Map</a>
+            <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar Provincia o Localidad" aria-label="Search">
+                <button class="btn rounded-pill" type="submit">Buscar</button>
+            </form>
         </div>
-        <div id="IRAmap" class="map"></div>
-    </div>
+    </nav>
+
+    <!-- Mapa de Argentina -->
+    <div id="IRAmap" class="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>

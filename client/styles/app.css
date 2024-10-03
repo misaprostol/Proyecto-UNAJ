@@ -1,20 +1,82 @@
-body, html {
+/* Estilos para el mapa */
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 #IRAmap {
-    height: 600px;
+    height: 100vh;
     width: 100%;
+    z-index: 1;
 }
 
-h1 {
-    margin-bottom: 20px;
+.navbar {
+    background-color: white;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.map {
-    height: 600px;
-    width: 100%;
-    margin-bottom: 20px;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #FF6600 !important;
+}
+
+.leaflet-control-zoom {
+    position: absolute;
+    top: 100px; 
+    left: 20px; 
+    z-index: 500; 
+}
+
+
+.form-control {
+    width: 300px;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-right: 10px; 
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background-color: #f98232;
+    color: black;
+}
+
+.btn:hover{
+    background-color: #d25603;
+    color: white;
+}
+
+input[type="search"] {
+    border-radius: 50px;
+}
+
+.btn-outline-success {
+    border-radius: 50px;
+}
+
+.form-inline .btn {
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        margin: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
