@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const { bd } = require('../config/db');
 
-const Infecciones = bd.define('infas', {
+const Infecciones = bd.define(año, {
      departamento_id: {
         type: DataTypes.INTEGER,
     }, 
