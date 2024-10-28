@@ -57,41 +57,6 @@ function searchLocation(query) {
         });
 }
 
-// Función para obtener sugerencias mientras se escribe
-document.getElementById('search').addEventListener('input', function () {
-    var query = this.value;
-
-    if (query.length > 2) { // Buscar sugerencias si hay más de 2 caracteres
-        var overpassUrl = "https://overpass-api.de/api/interpreter";
-        var overpassQuery = `
-        [out:json];
-        (
-          area[name="Argentina"]->.boundaryarea;
-          node(area.boundaryarea)[name~"${query}", i][place];
-          way(area.boundaryarea)[name~"${query}", i][place];
-          relation(area.boundaryarea)[name~"${query}", i][place];
-        );
-        out center;
-        `;
-
-        axios.post(overpassUrl, `data=${encodeURIComponent(overpassQuery)}`)
-            .then(function (response) {
-                var data = response.data.elements;
-                var suggestionsList = document.getElementById('suggestions');
-                suggestionsList.innerHTML = ''; // Limpiar las sugerencias anteriores
-
-                data.forEach(function (element) {
-                    var option = document.createElement('option');
-                    option.value = element.tags.name;
-                    suggestionsList.appendChild(option);
-                });
-            })
-            .catch(function (error) {
-                console.error("Error al obtener sugerencias:", error);
-            });
-    }
-});
-
 // Evento de clic en el botón de búsqueda
 document.getElementById('searchButton').addEventListener('click', function () {
     var query = document.getElementById('search').value;

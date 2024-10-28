@@ -21,8 +21,8 @@ html, body {
 }
 
 .navbar-brand {
+    font-family: "Fredoka", sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
     color:  #FF6600 !important;
 }
 
